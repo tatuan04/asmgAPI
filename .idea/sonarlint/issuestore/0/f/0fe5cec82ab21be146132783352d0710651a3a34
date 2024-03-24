@@ -1,0 +1,15 @@
+
+C
+java:S1604 "(Make this anonymous inner class a lambda(²Ê§àúÿÿÿÿ
+C
+java:S1604)"(Make this anonymous inner class a lambda(ë‡½Ÿûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(íçÜüÿÿÿÿ
+g	java:S116"RRename this field "in_User" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä·Ğ
+g	java:S116"RRename this field "in_Pass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä·Ğ
+n	java:S116"YRename this field "txtDangnhap_dk" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ììÀ
+;
+java:S1659"%Declare "edtPass" on a separate line.(’ğš
+;
+java:S1659"%Declare "in_Pass" on a separate line.(ä·Ğ
+=
+java:S1659"'Declare "txtQuenMk" on a separate line.(„ììÀ

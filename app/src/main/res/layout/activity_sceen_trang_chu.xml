@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen.SceenTrangChu">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawerLayout"
+        tools:context=".Layout"
+        android:background="#E5F8B2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--            <com.google.android.material.appbar.AppBarLayout-->
+            <!--                android:id="@+id/appBarLayout"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                >-->
+            <!--                <com.google.android.material.appbar.CollapsingToolbarLayout-->
+            <!--                    android:id="@+id/collapsingToolbarLayout"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    app:layout_scrollFlags="scroll|snapMargins">-->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DEEC5B">
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_people_24"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10sp"
+                    android:textSize="20sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_search_24"
+                        android:text="   WelCome To"
+                        android:layout_marginRight="10sp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_search_24"
+                        android:text="Healthy mart"
+                        android:textColor="#009688"
+                        android:layout_marginRight="10sp"
+                        android:textSize="26sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="15sp">
+
+                    <ImageView
+                        android:id="@+id/btn_proFile"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_gravity="end"
+                        android:background="@drawable/baseline_search_24"
+                        android:layout_marginEnd="10sp"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <!--                </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+            <!--            </com.google.android.material.appbar.AppBarLayout>-->
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
+        android:layout_width="370dp"
+        android:layout_height="50sp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:layout_margin="30dp"
+        app:menu="@menu/menu_nav_bottom"
+        app:itemBackground="@drawable/nav_bottom"/>
+
+
+
+</FrameLayout>

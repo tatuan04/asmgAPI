@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Fragment_TrangChu"
+    android:orientation="vertical"
+    android:background="#EDEDED"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txttennguoidung_tt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tạ Văn Tuân"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewpage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <me.relex.circleindicator.CircleIndicator3
+                android:id="@+id/chamduoi"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/viewpage"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:ci_drawable="@drawable/baseline_lens_24" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/pmimary"
+                        android:text="ALL"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:text="MILK"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/pmimary"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:text="VEGETABLES"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/pmimary"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:text="FRUIT"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/pmimary"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:text="Peanut"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/pmimary"/>
+
+                    <!-- Thêm các TextView khác nếu cần -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Sản Phẩm"
+                    android:textAllCaps="true"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+
+                <!--                    android:orientation="horizontal"-->
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvsanpham_tt"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                tools:listitem="@layout/item_san_pham" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

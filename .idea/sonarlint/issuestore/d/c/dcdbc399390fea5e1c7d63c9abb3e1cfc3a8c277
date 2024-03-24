@@ -1,0 +1,31 @@
+
+>
+java:S1604/"(Make this anonymous inner class a lambda(€Šá½
+C
+java:S16048"(Make this anonymous inner class a lambda(–á±³úÿÿÿÿ
+>
+java:S1604B"(Make this anonymous inner class a lambda(×Ô×Â
+C
+java:S1604T"(Make this anonymous inner class a lambda(Æõ“Îûÿÿÿÿ
+C
+java:S1604\"(Make this anonymous inner class a lambda(çÄİöøÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(íçÜüÿÿÿÿ
+g	java:S116"RRename this field "in_User" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä·Ğ
+g	java:S116"RRename this field "in_Pass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä·Ğ
+q	java:S116"WRename this field "txtDangki_dn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÅòııÿÿÿÿ
+;
+java:S1659"%Declare "edtPass" on a separate line.(’ğš
+;
+java:S1659"%Declare "in_Pass" on a separate line.(ä·Ğ
+B
+java:S1659"'Declare "txtQuenMk" on a separate line.(ºÅòııÿÿÿÿ
+U
+java:S1854.":Remove this useless assignment to local variable "chkNho".(³ı²ÿÿÿÿÿ
+F
+java:S1481."+Remove this unused "chkNho" local variable.(³ı²ÿÿÿÿÿ
+R
+java:S1854O"<Remove this useless assignment to local variable "edtEmail".(§ÒÄô
+C
+java:S1481O"-Remove this unused "edtEmail" local variable.(§ÒÄô
+œ
+java:S1186V"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(»ŠÇ¾ıÿÿÿÿ
